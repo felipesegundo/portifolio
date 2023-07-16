@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2? family= Russo+One & display=swap');
+
+:root{
+    --cor-primaria: #000000;
+    --cor-secundaria:#ffffff;
+    --cor-terciaria:#00ffff;
+}
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    height: 100vh;
+    box-sizing: border-box;
+    background-color: var(--cor-primaria);
+    color: var(--cor-secundaria);
+}
+.cabecalho_menu{
+    margin: 20px 0px 0 0;
+}
+
+.cabecalho_menu_link{
+    margin-left: 0px;
+    padding: 2% 0 0 10% ;
+    color: var(--cor-terciaria);
+    font-family: 'Russo One', sans-serif;
+    text-decoration: none;
+    
+}
+.cabecalho_menu_link:hover{
+    color: var(--cor-secundaria);
+
+}
+.titulo_destaque{
+    color: var(--cor-terciaria);
+}
+.apresentacao{
+    margin:5% 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.apresentacao_conteudo{
+    width: 50%;
+   
+}
+.apresentacao_conteudo_titulo{
+    font-size: 2.25rem;
+    font-family: 'Russo One', sans-serif;
+}
+.apresentacao_conteudo_paragrafo{
+    font-size: 1.15;
+    margin-top: 8px;
+    font-family: 'Russo One', sans-serif;
+}
+.apresentacao_links{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+
+}
+.apresentacao_links_link{
+    display: flex;
+    justify-content: center;
+    border:2px solid var(--cor-terciaria);
+    width: 50%;
+    text-align: center;
+    padding: 15px 0px;
+    text-decoration: none;
+    border-radius: 20px;
+    color: var(--cor-secundaria);
+    font-size: 1.15;
+    margin-top: 18px;
+    font-weight: 600;
+    font-family: 'Russo One', sans-serif;
+
+}
+.apresentacao_links_subtitulo{
+    margin-top: 1rem;
+    font-family: 'Russo One', sans-serif;
+
+}
+.apresentacao_links_link:hover{
+    color: black;
+    padding: 3%;
+    background-color: var(--cor-terciaria);
+}
+
+.apresentacao__imagem{
+    width: 50%;
+}
+.apresentacao_rodape{
+    background-color: var(--cor-terciaria);
+    text-align: center;
+    color: black;
+    height: 40px;
+    padding-top: 15px;
+    font-family: 'Russo One', sans-serif;
+
+}
+
+@media(max-width: 850px) {
+
+    
+    .cabecalho_menu{
+        text-align: center;
+        margin: 20px 40px 0 0;
+    }
+    .apresentacao{
+        flex-direction: column-reverse;
+    }
+
+    .apresentacao_conteudo{
+        width: auto;
+        margin-top: 6%;
+    }
+}
